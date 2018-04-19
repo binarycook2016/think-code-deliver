@@ -1,18 +1,18 @@
 # think-code-deliver
 
-##Steps
+## Steps
 
-###1. Build Your Own Toolchain
+### 1. Build Your Own Toolchain
 * After you [sign in](https://ibm.biz/BdZzHH) to IBM Cloud, go to `Catalog`
 * From the left menu, select `DevOps` catalog
 * Choose `Continuous Delivery` and `Create` an instance
 * Click `Getting started` and choose `Build your own toolchain`
-###2. Create a Git Repository
+### 2. Create a Git Repository
 * Click `Add tool` and choose `Github repos`
   - Select `clone` and enter the following link:
   `https://github.com/IBM/watson-conversation-slots-intro`
   then name your repo
-###3. Create a Delivery Pipeline
+### 3. Create a Delivery Pipeline
 * Click `Add tool` and choose `Delivery Pipeline`
 * Name your pipeline and click `create`
 * Click on your pipeline to configure it
@@ -41,7 +41,7 @@
     cf push "${CF_APP}"
     ```
 
-##Let's make it cognitive!
+## Let's make it cognitive!
 Let’s imagine the customer has ordered a delivery using pizza-bot and the driver is being (even) slower than normal.
 If the customer asks
 **“Where is my pizza?”**
@@ -52,7 +52,7 @@ When the driver still hasn’t arrived, the customer would probably ask again an
 **“Where the heck is my pizza? I ordered an hour ago! This is ridiculous.”**
 At this point, the “just ten minutes” reply is not going to be well received!
 Building bots that can understand conversation tone will mean we can script a suitable response, rather than infuriating our hungry customers.[* ](jamesthom.as/blog/2016/05/10/bots-with-ibm-watson/)
-###1. Edit Conversation Service
+### 1. Edit Conversation Service
 * From Intents tab, add **#deliver** and `$where* pizza` as an example
 * From Dialog tab, add a node to reply when the customer as asking about delivery and he is angry
 if bot recognizes **#deliver** and **$emotion:anger**
@@ -62,10 +62,10 @@ Then respond with:
 if bot recognizes **#deliver** and **!$emotion:anger**
 Then respond with:
 `I've just checked and the driver is ten minutes away, is there anything else I can help with?`
-###2. Add Eclipse Web IDE
+### 2. Add Eclipse Web IDE
 * From the toolchain, click `Add tool` and choose `Eclipse Web IDE`
 * Click on the icon to edit the code! :)
-###3. Add Tone Analyzer
+### 3. Add Tone Analyzer
 * Define tone analyzer before post function in app.js
 ```js
 var ToneAnalyzerV3 = require('watson-developer-cloud/tone-analyzer/v3');
