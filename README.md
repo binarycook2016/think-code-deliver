@@ -35,7 +35,8 @@ In the first stage, the toolchain will be composed of two tools:
     - Enter a name for your pipeline.
     - Select *Show apps in the View app menu*.
 3. Click **Create**.
-
+You'll end up with a toolchain similar to this one:
+![](pipeline.png)
 The Delivery Pipeline isn't yet configured for you. We need to add build and deploy stages to make it work.
 ##### Add a build stage
 1. On the Overview page, click on the created delivery pipeline to configure it.
@@ -69,8 +70,7 @@ Now from your delivery pipeline page, run BUILD stage. After build is succeeded,
 DEPLOY stage might take longer time, but once it finished you can see the link of your app!
 In case the stage failed, click **View logs** to diagnose the issue.
 
-You'll end up with a pipeline similar to this one:
-![](pipeline.png)
+
 
 ## Let's make it cognitive!
 Let's consider the customer emotions in our response.
