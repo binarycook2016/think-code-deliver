@@ -20,6 +20,7 @@ After seconds, your new toolchain's page opens.
 ### Step 2: Add and Configure tool integrations
 In the first stage, the toolchain will be composed of two tools:
 * Git Repos and Issue Tracking for source control.
+
 * Delivery Pipeline	to automate development, testing and delivery.
 #### Add Github Tool
 1. Click the **Add a Tool** button.
