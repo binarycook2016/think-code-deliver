@@ -1,5 +1,6 @@
 # think-code-deliver
 ![](ibm-garage.png)
+hello in binarycook Editing 
 
 This is a tutorial to adopt Garage Method through agile development and continuous delivery in order to build innovative solutions. We will deploy a node.js web app that is integrated with Watson Assistant to have a pizza-ordering chatbot.
 
